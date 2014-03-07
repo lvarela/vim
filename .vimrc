@@ -5,6 +5,7 @@ set gfn=inconsolata
 syntax on
 colorscheme wombat
 
+
 filetype plugin indent on
 
 scriptencoding utf-8
