@@ -1,11 +1,13 @@
-call pathogen#runtime_append_all_bundles()
+"call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 call pathogen#helptags()
 
-set gfn=inconsolata
+set t_Co=256
+colorscheme wombat256
 syntax on
-colorscheme wombat
 
 
+set gfn=inconsolata
 filetype plugin indent on
 
 scriptencoding utf-8
@@ -105,9 +107,7 @@ let g:dbext_default_SQLSRV_cmd_options = ' '
 
 
 " Microsoft SQL Server
-" let g:dbext_default_profile_microsoft_production = 'type=SQLSRV:user=sa:passwd=secured#24:host=www.servidorespr.com'
-let g:dbext_default_profile_CONN = 'type=ODBC:dsnname=ToyotaODBC:user=sa:passwd=net639A:dbname=tdpr'
-let g:dbext_default_profile_WSP = 'type=ODBC:dsnname=WSP:user=sa:passwd=net639A:dbname=HD_SUPPORT_CENTRAL'
+let g:dbext_default_profile_WSP = 'type=ODBC:dsnname=WSP:user=:passwd=:dbname='
 
 "default to T-SQL suntax
 let g:sql_type_default = 'sqlanywhere' 
